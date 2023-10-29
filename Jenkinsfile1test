@@ -1,9 +1,10 @@
 pipeline {
     agent any
+    tools {nodejs "node"}
     stages {
         stage ('build'){
             steps {
-                bat 'whoami'
+                git "https://github.com/Sheshagiri-BS/devopsassignment.git"
                 echo "Hello Sheshagiri once again"
             }
         }
