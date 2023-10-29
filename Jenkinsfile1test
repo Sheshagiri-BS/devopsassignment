@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage ('build'){
             steps {
-                git "https://github.com/Sheshagiri-BS/devopsassignment.git"
-                echo "Hello Sheshagiri"
+                bat 'whoami'
+                echo "Hello Sheshagiri once again"
             }
         }
     }
